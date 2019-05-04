@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body#client {
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    background-color: chartreuse;
+}
+
+nav#Menu {
+    display: flex;
+    flex-basis: 70px;
+    background-color: black;
+    flex-shrink: 0;
+}
+
+main {
+    display: flex;
+    flex-grow: 1;
+    background-color: rgb(133, 133, 133);
+}
+    main > aside {
+        display: flex;
+        flex-basis: 320px;
+        background-color: bisque;
+        min-width: 100px;
+        max-width: 600px;
+    }
+    main div#resizing_bar_h {
+        display: flex;
+        flex-direction: column;
+        background-color: black;
+        flex-basis: 10px;
+        flex-shrink: 0;
+    }
+    main div#resizing_bar_h #bar {
+        display: flex;
+        flex-basis: 450px;
+        min-height: 150px;
+        max-height: 600px;
+    }
+    main div#resizing_bar_h #resizer {
+        display: flex;
+        flex-basis: 10px;
+        background-color: rgb(115, 255, 0);
+    }
+    main div#resizing_bar_h #resizer:hover {
+        cursor: all-scroll;
+    }
+
+
+    main section#content {
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+        background-color: rgb(231, 221, 208);
+    }
+    main section#content > section#table {
+        display: flex;
+        flex-basis: 450px;
+        background-color: rgb(190, 123, 42);
+        min-height: 150px;
+        max-height: 600px;
+    }
+    main div#resizing_bar_v {
+        display: flex;
+        background-color: black;
+        flex-basis: 10px;
+        flex-shrink: 0;
+    }
+    main section#content > section#message {
+        display: flex;
+        flex-grow: 1;
+        background-color: rgb(161, 139, 112);
+    }
